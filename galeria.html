@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Panadería La Espiga</title>
+    <meta name="description" content="Fotos, video y ubicación de Panadería La Espiga en Getsemaní, Cartagena.">
+    <meta name="author" content="Panadería La Espiga">
+    <link rel="canonical" href="https://usuario.github.io/panaderia-la-espiga/galeria.html">
+    <link rel="icon" href="img/logo.jpg" type="image/png">
+</head>
+<body>
+    <a href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <img src="img/logo.jpg" alt="Logotipo de Panadería La Espiga" width="160" height="60">
+        <h1>Galería</h1>
+        <p>Nuestro trabajo y nuestra ubicación</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Carta</a></li>
+                <li><a href="galeria.html" aria-current="page">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="reserva.html">Pedir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section>
+            <h2>Nuestros productos en imágenes</h2>
+
+            <img src="img/pan-artesanal.jpeg" alt="Hogazas de masa madre recién salidas del horno" width="800" height="500" loading="lazy">
+            <img src="img/tortas.jpeg" alt="Torta de cumpleaños decorada con buttercream y frutas" width="800" height="500" loading="lazy">
+            <img src="img/croissant.jpeg" alt="Croissants dorados en bandeja de hornear" width="800" height="500" loading="lazy">
+
+            <img src="img/separador.png" alt="" width="200" height="20">
+            <figure>
+                <img src="img/getsemani.jpg" alt="Fachada de Panadería La Espiga en la Calle del Arsenal" width="800" height="500" loading="lazy">
+                <figcaption>
+                    Nuestra sede en Getsemaní. Foto: archivo Panadería La Espiga.
+                </figcaption>
+            </figure>
+
+            <picture>
+                <source srcset="img/torta-webp.webp" type="image/webp">
+                <img src="img/torta-personalizada.jpg" alt="Torta de tres pisos lista para entrega" width="800" height="500" loading="lazy">
+            </picture>
+        </section>
+
+        <section>
+            <h2>Video de nuestro proceso</h2>
+            <video controls width="720" poster="img/portada-video.jpg" preload="metadata">
+                <source src="video/proceso.webm" type="video/webm">
+                <source src="video/proceso.mp4" type="video/mp4">
+                <track src="video/subtitulos-es.vtt" kind="subtitles" srclang="es" label="Español" default>
+                <p>Su navegador no reproduce video. <a href="video/proceso.mp4">Descárguelo aquí</a>.</p>
+            </video>
+        </section>
+
+        <section>
+            <h2>Cómo llegar</h2>
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-75.55,10.41,-75.53,10.43&amp;layer=mapnik"
+                    width="600" height="450" loading="lazy" style="border:0"
+                    title="Ubicación de Panadería La Espiga en la Calle del Arsenal #12-45, Getsemaní, Cartagena">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contáctenos</h2>
+        <address>
+            Calle del Arsenal #12-45, Getsemaní<br>
+            Cartagena de Indias, Bolívar<br>
+            <a href="tel:+573005551234">300 555 1234</a> ·
+            <a href="mailto:pedidos@laespiga.com.co">pedidos@laespiga.com.co</a>
+        </address>
+        <p><small>&copy; 2026 Panadería La Espiga. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>

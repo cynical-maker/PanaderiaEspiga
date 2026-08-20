@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UFT-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia La Espiga</title>
-    <body>
-        <h1>Panaderia La Espiga</h1>
-        <p>En Panaderia La Espiga elaboramos pan fresco, productos artesanales con ingredientes de calidad y el sabor tradicional de siempre.</p>
-    </body>
+    <title>Panadería La Espiga | Pan artesanal y repostería por encargo en Cartagena</title>
 </head>
+<body>
+    <a href="#contenido">Saltar al contenido principal</a>
+    <header>
+        <img src="img/logo.jpg" alt="Logotipo de Panadería La Espiga" width="160" height="60">
+        <h1>Panadería La Espiga</h1>
+        <p>Pan artesanal y repostería por encargo en Getsemaní</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="reservas.html">Pedir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <section id="presentacion">
+            <h2>Quiénes somos</h2>
+            <p>Elaboramos pan artesanal y repostería por encargo en el corazón de Getsemaní, Cartagena. 
+               Trabajamos con harinas seleccionadas, mantequilla de primera calidad y frutas de la región. 
+               Atendemos a familias y empresas que buscan sabor auténtico y calidad constante desde hace más de quince años.</p>
+            <p>Operamos con registro <abbr title="Instituto Nacional de Vigilancia de Medicamentos y Alimentos">INVIMA</abbr> 
+               vigente y cumplimos todas las normas de inocuidad alimentaria.</p>
+        </section>
+
+        <hr>
+        <section id="productos">
+            <h2>Nuestros productos</h2>
+            <article>
+                <header>
+                    <h3>Pan artesanal diario</h3>
+                    <p>Disponible todos los días <time datetime="06:00">desde las 6:00 a. m.</time></p>
+                </header>
+                <img src="img/pan-artesanal.jpge" 
+                     alt="Panes de masa madre recién horneados sobre mesa de madera"
+                     width="600" height="400" loading="lazy">
+                <p>Hogazas de masa madre, baguettes, ciabattas y panes integrales elaborados cada madrugada. 
+                   Fermentación lenta de 18 horas para un sabor profundo y una miga aireada.</p>
+                <p><strong>Los pedidos del día se reciben hasta las 10:00 a. m.</strong> Después de esa hora 
+                   solo queda el stock disponible en mostrador.</p>
+                <p>Precio por hogaza: <del>$8.500</del> <mark>$7.200</mark></p>
+                <h4>Qué incluye</h4>
+                <ul>
+                    <li>Harina de trigo orgánica</li>
+                    <li>Masa madre natural</li>
+                    <li>Sal marina y agua filtrada</li>
+                    <li>Horneado en horno de piedra</li>
+                </ul>
+                <footer>
+                    <p>Desde <strong>$7.200</strong> por unidad</p>
+                    <p><a href="carta.html#pan">Ver detalles y otros panes</a></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Tortas y pasteles por encargo</h3>
+                    <p>Pedidos con mínimo <time datetime="P2D">48 horas</time> de anticipación</p>
+                </header>
+                <img src="img/tortas.jpeg" 
+                     alt="Tortas totalmente personalizables mediante a una foto o alguien en especifico"
+                     width="600" height="400" loading="lazy">
+                <p>Tortas personalizadas para cumpleaños, bodas, graduaciones y eventos empresariales. 
+                   Sabores clásicos y de temporada: chocolate belga, red velvet, zanahoria, tres leches y más.</p>
+                <p>Le recomendamos encargar <em>con al menos dos días de anticipación</em>: después de ese plazo 
+                   no garantizamos disponibilidad de ingredientes especiales.</p>
+                <footer>
+                    <p>Desde <strong>$85.000</strong> (8 porciones)</p>
+                    <p><a href="carta.html#tortas">Ver catálogo de tortas</a></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Desayunos empresariales</h3>
+                    <p>Entrega de lunes a viernes <time datetime="07:30">a partir de las 7:30 a. m.</time></p>
+                </header>
+                <img src="img/desayuno2.jpg" 
+                     alt="Bandeja con croissants, jugo natural y frutas para oficina"
+                     width="600" height="400" loading="lazy">
+                <p>Paquetes de desayuno para oficinas y reuniones: pan fresco, croissants, queques, jugos naturales 
+                   y frutas de la temporada. Entrega puntual en el Centro Histórico y Bocagrande.</p>
+                <footer>
+                    <p>Desde <strong>$28.000</strong> por persona</p>
+                    <p><a href="carta.html#desayunos">Ver opciones de paquetes</a></p>
+                </footer>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="como-pedir">
+            <h2>Cómo hacer un pedido</h2>
+            <ol>
+                <li>Elija el producto y la cantidad en nuestra carta</li>
+                <li>Diligencie el formulario de pedido con la fecha de entrega</li>
+                <li>Confirme el abono del 50 % por transferencia</li>
+                <li>Reciba la confirmación y retire o reciba su pedido</li>
+            </ol>
+        </section>
+
+        <section id="glosario">
+            <h2>Glosario del panadero</h2>
+            <dl>
+                <dt>Masa madre</dt>
+                <dd>Cultivo natural de levaduras y bacterias que fermenta el pan sin levadura comercial.</dd>
+                <dt>Temperado</dt>
+                <dd>Proceso de calentar y enfriar el chocolate para que quede brillante y crujiente.</dd>
+                <dt>Glaseado real</dt>
+                <dd>Cubierta de azúcar glas y clara de huevo usada para decorar galletas y tortas.</dd>
+            </dl>
+        </section>
+        <aside aria-label="Información útil para encargos">
+            <h2>Antes de encargar</h2>
+            <ul>
+                <li>Los encargos de tortas requieren mínimo 48 horas de anticipación</li>
+                <li>El pan del día se agota rápido: reserve con un día de antelación si necesita cantidad</li>
+                <li>Aceptamos transferencias y efectivo al retirar</li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer>
+        <h2>Contáctenos</h2>
+        <address>
+            Calle del Arsenal #12-45, Getsemaní<br>
+            Cartagena de Indias, Bolívar<br>
+            <a href="tel:+573005551234">300 555 1234</a> · 
+            <a href="mailto:pedidos@laespiga.com.co">pedidos@laespiga.com.co</a>
+        </address>
+        <p><small>&copy; 2026 Panadería La Espiga. Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
 </html>
