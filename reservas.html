@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar pedido | Panadería La Espiga</title>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.jpg" alt="Logotipo de Panadería La Espiga" width="160" height="60">
+        <h1>Realizar pedido</h1>
+        <p>Complete el formulario y le confirmaremos disponibilidad</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Carta</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de pedido</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos del solicitante</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60"
+                           autocomplete="name" placeholder="Ej.: María Fernanda Pérez">
+                </p>
+
+                <p>
+                    <label for="tipo-doc">Tipo de documento</label>
+                    <select id="tipo-doc" name="tipo-doc" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="cc">Cédula de ciudadanía</option>
+                        <option value="ce">Cédula de extranjería</option>
+                        <option value="nit">NIT (empresa)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="documento">Número de documento</label>
+                    <input type="text" id="documento" name="documento" required
+                           pattern="[0-9]{6,12}" title="Entre 6 y 12 dígitos, sin puntos ni espacios"
+                           placeholder="Sin puntos ni espacios">
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required autocomplete="email"
+                           placeholder="usuario@correo.com">
+                </p>
+
+                <p>
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" required
+                           pattern="3[0-9]{9}" title="Diez dígitos que inicien en 3. Ejemplo: 3001234567"
+                           placeholder="3001234567" autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="ciudad">Ciudad de origen</label>
+                    <input type="text" id="ciudad" name="ciudad" list="ciudades" placeholder="Ej.: Cartagena">
+                    <datalist id="ciudades">
+                        <option value="Cartagena">
+                        <option value="Barranquilla">
+                        <option value="Bogotá">
+                        <option value="Medellín">
+                        <option value="Cali">
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del pedido</legend>
+
+                <p>
+                    <label for="producto">Producto</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">-- Seleccione un producto --</option>
+                        <optgroup label="Pan artesanal">
+                            <option value="hogaza">Hogaza de masa madre — $7.200</option>
+                            <option value="baguette">Baguette — $3.800</option>
+                            <option value="ciabatta">Ciabatta integral — $5.500</option>
+                            <option value="pan-chocolate">Pan de chocolate — $4.200</option>
+                        </optgroup>
+                        <optgroup label="Pastelería">
+                            <option value="torta-1">Torta clásica (8-10 porciones) — desde $85.000</option>
+                            <option value="torta-2">Torta dos pisos — desde $180.000</option>
+                            <option value="torta-3">Torta tres pisos — desde $320.000</option>
+                        </optgroup>
+                        <optgroup label="Desayunos">
+                            <option value="desayuno-basico">Desayuno empresarial básico — desde $28.000/persona</option>
+                            <option value="desayuno-premium">Desayuno empresarial premium — desde $42.000/persona</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de entrega</label>
+                    <input type="date" id="fecha" name="fecha" required min="2026-08-22" max="2026-12-31">
+                </p>
+
+                <p>
+                    <label for="hora">Hora preferida de retiro o entrega</label>
+                    <input type="time" id="hora" name="hora" min="07:00" max="18:00">
+                </p>
+
+                <p>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" required min="1" max="50" value="1">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de entrega</legend>
+                <p>
+                    <input type="radio" id="retiro" name="entrega" value="retiro" required>
+                    <label for="retiro">Retiro en el local</label>
+                </p>
+                <p>
+                    <input type="radio" id="domicilio" name="entrega" value="domicilio">
+                    <label for="domicilio">Domicilio (Centro Histórico y Bocagrande)</label>
+                </p>
+                <p>
+                    <input type="radio" id="empresarial" name="entrega" value="empresarial">
+                    <label for="empresarial">Entrega empresarial</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Opciones adicionales</legend>
+                <p>
+                    <input type="checkbox" id="ad-mensaje" name="adicionales[]" value="mensaje">
+                    <label for="ad-mensaje">Incluir mensaje personalizado en la torta</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="ad-empaque" name="adicionales[]" value="empaque">
+                    <label for="ad-empaque">Empaque especial para regalo</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="ad-velas" name="adicionales[]" value="velas">
+                    <label for="ad-velas">Velas de cumpleaños</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Información adicional</legend>
+                <p>
+                    <label for="observaciones">Observaciones o requerimientos especiales</label>
+                    <textarea id="observaciones" name="observaciones" rows="5" maxlength="500"
+                              placeholder="Alergias, sabor preferido, temática de la torta, dirección de entrega..."></textarea>
+                </p>
+                <p>
+                    <label for="referencia">Adjunte imagen de referencia (opcional)</label>
+                    <input type="file" id="referencia" name="referencia" accept=".jpg,.jpeg,.png,.pdf">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Autorización de tratamiento de datos</legend>
+                <p>
+                    <input type="checkbox" id="habeas-data" name="habeas-data" value="si" required>
+                    <label for="habeas-data">
+                        Autorizo a Panadería La Espiga el tratamiento de mis datos personales conforme a su
+                        <a href="docs/politica-datos.pdf" target="_blank" rel="noopener noreferrer">política de tratamiento de datos</a>,
+                        de acuerdo con la Ley 1581 de 2012.
+                    </label>
+                </p>
+            </fieldset>
+
+            <input type="hidden" name="canal" value="sitio-web">
+
+            <p><button type="submit">Enviar solicitud de pedido</button></p>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Contáctenos</h2>
+        <address>
+            Calle del Arsenal #12-45, Getsemaní<br>
+            Cartagena de Indias, Bolívar<br>
+            <a href="tel:+573005551234">317 165 1365</a> ·
+            <a href="mailto:mailto:michaelmoralesingles@gmail.com?subject=Consulta">pedidos@laespiga.com.co</a>
+        </address>
+
+        <nav aria-label="Enlaces legales">
+            <ul>
+                <li><a href="docs/terminos.pdf">Términos y condiciones</a></li>
+                <li><a href="docs/politica-datos.pdf">Política de tratamiento de datos</a></li>
+            </ul>
+        </nav>
+
+        <p><small>&copy; 2026 Panadería La Espiga. Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>
